@@ -41,3 +41,9 @@ border-radius 크기(or 백분율)
 
 속성에서 x x x x 4개의 값을 줄 수 있다면
 상하좌우에 줄 수 있는 속성이라는 것.
+
+alt = 복수 커서
+
+li 
+display-block => 마커제거
+float left로 한줄정렬
