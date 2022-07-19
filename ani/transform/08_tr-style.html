@@ -2,6 +2,33 @@
 <html lang="ko">
 	<head>
 		<meta charset="utf-8">
+		<style>
+			div{
+				width: 200px;
+				height: 200px;
+			}
+			.container{
+				border: solid 1px black;
+				margin: 100px 0 0 100px;
+				float: left;
+				perspective: 300px;
+			}
+			.box1{
+				background: #82cbd2;
+				transform: rotateY(45deg);
+			}
+			.box2{
+				background: #0d6097;
+				transform: rotateX(45deg);
+				transform-origin: left top;
+			}
+			#tr-style1{
+				transform-style: flat;
+			}
+			#tr-style2{
+				transform-style: preserve-3d;
+			}
+		</style>
 		<title>Transform</title>
  	</head>
 	<body>		

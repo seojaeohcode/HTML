@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #ex{
+            width: 500px;
+            height: 150px;
+            margin: 0 auto;
+            border: solid 1px #333;
+            padding: 20px;
+        }
+        #ex:hover .box{
+            transform: rotate(720deg);
+            margin-left: 420px;
+        }
+        .box{
+            width: 60px;
+            height: 60px;
+            background: #999;
+            margin-bottom: 10px;
+        }
+        #no-delay{
+            border: solid 1px red;
+            transition-duration: 3s;
+        }
+        #delay{
+            border: solid 1px blue;
+            transition-duration: 3s;
+            transition-delay: 1s;
+        }
+    </style>
+    <title>delay</title>
+</head>
+<body>
+    <div id="ex">
+        <div id="no-delay" class="box">
+            <p>no-delay</p>
+        </div>
+        <div id="delay" class="box">
+            <p>delay</p>
+        </div>
+    </div>
+</body>
+</html>

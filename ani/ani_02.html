@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #wrap{
+            width: 160px;
+            margin: 100px auto;
+        }
+        #Box{
+            width: 151px;
+            height: 151px;
+            /* background: url(./box_img.jpg) no-repeat 0 0; */
+            background: url(./rainbow_ball.png);
+            animation: ball 4s steps(6) infinite ;
+            /* 이름 시간 단계 무한 */
+        }
+        @keyframes ball{
+            from{
+                background-position: 0 0;
+            }
+            to{
+                background-position: -906px 0;
+                /* 이미지의 총길이 단위넣기 */
+            }
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap">
+        <div id="Box"></div>
+    </div>
+</body>
+</html>

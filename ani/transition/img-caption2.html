@@ -19,6 +19,7 @@
   .box .photo {
     position:absolute;
     left:0;
+    transition: all 300ms linear;
   }
   .box .caption {
     position:absolute;
@@ -27,17 +28,20 @@
     z-index:100;
     width:200px;
     height:300px;
-    left:-250px;
+    right:-250px;
     padding:20px;
     transition: all 300ms linear;
   }
   .box:hover .caption{
-    transform: translateX(100%);
+    transform: translateX(-100%);
     /* 
     이것도 가능
     transform: translateX(-100%);
     transform: translateX(0%);
     */
+  }
+  .box:hover .photo{
+    transform: translateX(-10%);
   }
   .box .caption p {
     position:absolute;
